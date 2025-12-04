@@ -1,129 +1,88 @@
-🚀 Assistente Virtual Smoak
+# Assistente Virtual Smoak
 
-Um assistente virtual em Python capaz de entender comandos de voz e executar ações no seu computador.
-Com ele você pode abrir programas, buscar no Google, acessar sites, escrever textos e até desligar o PC usando somente sua voz.
+Assistente virtual desenvolvido em Python para testes e estudos de automação com voz, interação com o sistema e execução de tarefas no Windows.
 
-🧠 Funcionalidades
-🎤 Reconhecimento de voz
+---
 
-Usa SpeechRecognition com API do Google.
+## Funcionalidades
 
-🔊 Síntese de voz (fala)
+- Reconhecimento de voz com SpeechRecognition  
+- Respostas por voz usando gTTS ou pyttsx3  
+- Abertura de sites (Google, YouTube, WhatsApp Web)  
+- Abertura de programas instalados (Blender, Notepad, etc.)  
+- Digitação automática com pyautogui  
+- Comandos de sistema (como desligar o computador)  
+- Comandos internos simples para testes  
+- Base preparada para futura interface gráfica estilo Jarvis
 
-Usa gTTS (voz humana, natural)
+---
 
-Toca o áudio com playsound
+## Como executar o projeto
 
-🌐 Ações na internet
+### 1. Clonar o repositório
 
-Pesquisa no Google
+```bash
+git clone https://github.com/01Bruna11/Assistente_vitrtual-v0.git
+cd Assistente_vitrtual-v0
+```
 
-Pesquisa no YouTube
+### 2. Atualizar o pip (recomendado)
 
-Abre WhatsApp Web
+```bash
+python -m pip install --upgrade pip
+```
 
-Abre URLs personalizadas (ex: Gather)
+### 3. Instalar dependências
 
-💻 Automação no Windows
-
-Abre programas (Notepad, Blender)
-
-Digita textos automaticamente
-
-Move o mouse / clica (pyautogui)
-
-Pode desligar o computador
-
-📝 Interação com Notepad
-
-Abre o bloco de notas
-
-Pergunta o que você quer escrever
-
-Digita o texto reconhecido por voz
-
-Salva e fecha automaticamente
-
-⌨ Teclado virtual
-
-Abre o teclado virtual do Windows (osk)
-
-Digita comandos por voz
-
-🔮 Futuro (planejado)
-
-Interface gráfica estilo Jarvis
-
-Mais comandos
-
-Controle por hotword permanente
-
-Integração com APIs externas
-
-📁 Estrutura do Projeto
-assistente.py
-requirements.txt
-README.md
-
-▶️ Como rodar
-
-Instale as dependências:
-
+```bash
 pip install -r requirements.txt
+```
 
+### 4. Executar o assistente
 
-Execute o assistente:
-
+```bash
 python assistente.py
+```
 
-🧩 Exemplo de comandos internos (texto)
+---
 
-Apesar de funcionar por voz, o assistente internamente possui um dicionário base (exemplo):
+## Comandos internos disponíveis
 
+```python
 commands = {
     "ola": "Olá! Como posso ajudar?",
     "ajuda": "Lista de comandos disponíveis: ola, ajuda, horario, sobre",
     "horario": "O horário atual será exibido aqui futuramente.",
     "sobre": "Este é um assistente simples criado para testes."
 }
+```
 
-🎙 Exemplos de comandos por voz
-Comando falado	Ação executada
-“Hey Smoak”	Saudação
-“Looking for Python tutorials”	Pesquisa no Google
-“Looking YouTube for Blender models”	YouTube
-“Open WhatsApp”	Abre WhatsApp Web
-“Open notepad”	Abre bloco de notas e digita por voz
-“Power off”	Desliga o PC
-“Open Blender”	Abre Blender
-“Open keyboard”	Abre teclado virtual
-🛠 Tecnologias utilizadas
+---
 
-Python 3
+## Estrutura do projeto
 
-SpeechRecognition
+```
+Assistente_vitrtual-v0/
+│── assistente.py
+│── requirements.txt
+│── README.md
+└── outros arquivos
+```
 
-PyAudio (dependência do microfone)
+---
 
-gTTS
+## Requisitos
 
-playsound
+- Python 3.9 ou superior  
+- Sistema Windows  
+- Microfone para reconhecimento de voz  
 
-pyautogui
+---
 
-webbrowser
+## Melhorias futuras
 
-tkinter (em breve interface)
-
-📦 requirements.txt
-
-Certifique-se de incluir:
-
-SpeechRecognition
-gTTS
-playsound==1.2.2
-pyautogui
-pyaudio
-
-
-E todas as outras libs necessárias.
+- Interface gráfica  
+- Respostas mais inteligentes  
+- Suporte offline  
+- Plugins adicionais  
+- Painel de configurações
