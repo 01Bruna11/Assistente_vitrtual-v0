@@ -13,7 +13,7 @@ Assistente virtual em Python capaz de:
 
 ```bash
 pip install -r requirements.txt
-python main.py
+python assistente.py
 
 ## Exemplo de estrutura de comandos já disponíveis
 
